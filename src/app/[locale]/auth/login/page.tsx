@@ -72,6 +72,12 @@ export default function LoginPage() {
         </Link>
       </Box>
 
+      <Box
+        component="img"
+        src="/logo-blue.png"
+        alt="Breaking Waves"
+        sx={{ height: 80, mb: 2 }}
+      />
       <Typography variant="h4" fontWeight={700} color="primary" gutterBottom>
         {t('auth.loginTitle')}
       </Typography>

@@ -12,7 +12,13 @@ export function TopBar() {
   return (
     <AppBar position="sticky" elevation={1}>
       <Toolbar>
-        <Typography variant="h6" fontWeight={700} sx={{ flex: 1 }} noWrap>
+        <Box
+          component="img"
+          src="/logo-white.png"
+          alt=""
+          sx={{ height: 28, width: 'auto', mr: 1, objectFit: 'contain' }}
+        />
+        <Typography variant="h6" fontWeight={700} sx={{ flex: 1, lineHeight: 1 }} noWrap>
           {t('appName')}
         </Typography>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
