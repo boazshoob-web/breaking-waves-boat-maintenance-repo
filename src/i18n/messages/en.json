@@ -28,6 +28,7 @@
   "nav": {
     "issues": "Issues",
     "fueling": "Fueling",
+    "stats": "Stats",
     "users": "Users"
   },
   "issues": {
@@ -67,6 +68,19 @@
     "date": "Date",
     "liters": "L",
     "noRecords": "No fueling records yet"
+  },
+  "stats": {
+    "title": "Statistics",
+    "bySeverity": "Issues by Severity",
+    "byTeam": "Issues by Team",
+    "byOpenPeriod": "Open Issues by Duration",
+    "periods": {
+      "< 1 week": "< 1 week",
+      "1-2 weeks": "1-2 weeks",
+      "2-4 weeks": "2-4 weeks",
+      "1-3 months": "1-3 months",
+      "3+ months": "3+ months"
+    }
   },
   "users": {
     "title": "User Management",

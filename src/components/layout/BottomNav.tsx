@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Paper, BottomNavigation, BottomNavigationAction } from '@mui/material';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
+import BarChartIcon from '@mui/icons-material/BarChart';
 import PeopleIcon from '@mui/icons-material/People';
 import { useSession } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
@@ -21,13 +22,19 @@ export function BottomNav() {
   useEffect(() => {
     if (pathname.startsWith('/issues')) setValue(0);
     else if (pathname.startsWith('/fueling')) setValue(1);
-    else if (pathname.startsWith('/admin/users')) setValue(2);
+    else if (pathname.startsWith('/stats')) setValue(2);
+    else if (pathname.startsWith('/admin/users')) setValue(3);
   }, [pathname]);
 
   const handleChange = (_: unknown, newValue: number) => {
     setValue(newValue);
-    const routes = ['/issues', '/fueling', '/admin/users'];
-    router.push(routes[newValue]);
+    if (isSuperAdmin) {
+      const routes = ['/issues', '/fueling', '/stats', '/admin/users'];
+      router.push(routes[newValue]);
+    } else {
+      const routes = ['/issues', '/fueling', '/stats'];
+      router.push(routes[newValue]);
+    }
   };
 
   return (
@@ -38,6 +45,7 @@ export function BottomNav() {
       <BottomNavigation value={value} onChange={handleChange} showLabels>
         <BottomNavigationAction label={t('issues')} icon={<ListAltIcon />} />
         <BottomNavigationAction label={t('fueling')} icon={<LocalGasStationIcon />} />
+        <BottomNavigationAction label={t('stats')} icon={<BarChartIcon />} />
         {isSuperAdmin && (
           <BottomNavigationAction label={t('users')} icon={<PeopleIcon />} />
         )}
