@@ -3,6 +3,7 @@
 import { Box, Typography, CircularProgress } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import { useStats } from '@/hooks/api/useStatsQueries';
+import { StatusChart } from '@/components/stats/StatusChart';
 import { SeverityChart } from '@/components/stats/SeverityChart';
 import { TeamChart } from '@/components/stats/TeamChart';
 import { OpenPeriodChart } from '@/components/stats/OpenPeriodChart';
@@ -26,6 +27,7 @@ export default function StatsPage() {
       <Typography variant="h6" fontWeight={700}>
         {t('title')}
       </Typography>
+      <StatusChart data={data.byStatus} />
       <SeverityChart data={data.bySeverity} />
       <TeamChart data={data.byTeam} />
       <OpenPeriodChart data={data.byOpenPeriod} />

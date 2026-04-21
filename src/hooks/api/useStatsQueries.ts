@@ -8,6 +8,7 @@ interface ChartData {
 }
 
 interface StatsData {
+  byStatus: ChartData[];
   bySeverity: ChartData[];
   byTeam: ChartData[];
   byOpenPeriod: ChartData[];

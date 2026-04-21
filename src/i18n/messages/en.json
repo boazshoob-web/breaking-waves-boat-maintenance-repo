@@ -71,6 +71,7 @@
   },
   "stats": {
     "title": "Statistics",
+    "byStatus": "Issues by Status",
     "bySeverity": "Issues by Severity",
     "byTeam": "Issues by Team",
     "byOpenPeriod": "Open Issues by Duration",

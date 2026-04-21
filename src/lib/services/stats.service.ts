@@ -1,6 +1,17 @@
 import { prisma } from '@/lib/db/prisma';
 
 export const StatsService = {
+  async getIssueByStatus() {
+    const results = await prisma.maintenanceIssue.groupBy({
+      by: ['status'],
+      _count: { id: true },
+    });
+    return results.map((r) => ({
+      name: r.status,
+      value: r._count.id,
+    }));
+  },
+
   async getIssueBySeverity() {
     const results = await prisma.maintenanceIssue.groupBy({
       by: ['severity'],

@@ -7,13 +7,14 @@ export async function GET() {
   if (error) return error;
 
   try {
-    const [bySeverity, byTeam, byOpenPeriod] = await Promise.all([
+    const [byStatus, bySeverity, byTeam, byOpenPeriod] = await Promise.all([
+      StatsService.getIssueByStatus(),
       StatsService.getIssueBySeverity(),
       StatsService.getIssueByTeam(),
       StatsService.getIssueByOpenPeriod(),
     ]);
 
-    return NextResponse.json({ bySeverity, byTeam, byOpenPeriod });
+    return NextResponse.json({ byStatus, bySeverity, byTeam, byOpenPeriod });
   } catch {
     return NextResponse.json({ error: 'Failed to fetch stats' }, { status: 500 });
   }
