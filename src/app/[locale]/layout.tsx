@@ -15,6 +15,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={direction}>
       <head>
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e3c58" />
       </head>
       <body style={{ margin: 0 }}>
