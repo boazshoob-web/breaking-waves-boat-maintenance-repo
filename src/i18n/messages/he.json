@@ -1,0 +1,85 @@
+{
+  "common": {
+    "appName": "תחזוקת סירה",
+    "save": "שמור",
+    "cancel": "ביטול",
+    "delete": "מחק",
+    "edit": "ערוך",
+    "add": "הוסף",
+    "required": "שדה חובה",
+    "noResults": "לא נמצאו תוצאות",
+    "loading": "טוען...",
+    "close": "סגור",
+    "back": "חזרה",
+    "yes": "כן",
+    "no": "לא",
+    "areYouSure": "האם אתה בטוח?",
+    "error": "אירעה שגיאה"
+  },
+  "auth": {
+    "login": "התחבר",
+    "logout": "התנתק",
+    "phone": "מספר טלפון",
+    "password": "סיסמה",
+    "invalidCredentials": "פרטי התחברות שגויים",
+    "loginTitle": "תחזוקת סירה",
+    "loginSubtitle": "מערכת תחזוקה - שוברי גלים"
+  },
+  "nav": {
+    "issues": "תקלות",
+    "fueling": "תדלוק",
+    "users": "משתמשים"
+  },
+  "issues": {
+    "title": "תקלות תחזוקה",
+    "newIssue": "תקלה חדשה",
+    "editIssue": "עריכת תקלה",
+    "description": "תיאור התקלה",
+    "status": "סטטוס",
+    "severity": "חומרה",
+    "handleBy": "טיפול ע\"י",
+    "dateOpened": "תאריך פתיחה",
+    "lastModified": "עדכון אחרון",
+    "all": "הכל",
+    "noIssues": "לא נמצאו תקלות",
+    "statuses": {
+      "OPEN": "פתוח",
+      "IN_PROCESS": "בטיפול",
+      "CLOSED": "סגור",
+      "NON_ISSUE": "לא תקלה",
+      "RE_OPENED": "נפתח מחדש"
+    },
+    "severities": {
+      "CRITICAL": "קריטי",
+      "WARNING": "אזהרה",
+      "INFO": "מידע"
+    },
+    "handleByOptions": {
+      "INTERNAL": "פנימי",
+      "SERVICE_PROVIDER": "ספק שירות"
+    }
+  },
+  "fueling": {
+    "title": "רישומי תדלוק",
+    "amount": "כמות",
+    "engineHours": "שעות מנוע",
+    "hours": "שע'",
+    "date": "תאריך",
+    "liters": "ל'",
+    "noRecords": "אין רישומי תדלוק עדיין"
+  },
+  "users": {
+    "title": "ניהול משתמשים",
+    "addUser": "הוסף משתמש",
+    "editUser": "ערוך משתמש",
+    "name": "שם",
+    "phone": "טלפון",
+    "password": "סיסמה",
+    "newPassword": "סיסמה חדשה",
+    "passwordMin": "מינימום 4 תווים",
+    "passwordLeaveEmpty": "השאר ריק לשמירת הסיסמה הנוכחית",
+    "noUsers": "אין משתמשים עדיין",
+    "active": "פעיל",
+    "inactive": "לא פעיל"
+  }
+}

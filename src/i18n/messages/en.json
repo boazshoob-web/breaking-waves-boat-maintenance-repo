@@ -1,0 +1,85 @@
+{
+  "common": {
+    "appName": "Boat Maintenance",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "required": "Required",
+    "noResults": "No results found",
+    "loading": "Loading...",
+    "close": "Close",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No",
+    "areYouSure": "Are you sure?",
+    "error": "An error occurred"
+  },
+  "auth": {
+    "login": "Log In",
+    "logout": "Log Out",
+    "phone": "Phone Number",
+    "password": "Password",
+    "invalidCredentials": "Invalid credentials",
+    "loginTitle": "Boat Maintenance",
+    "loginSubtitle": "Breaking Waves Maintenance System"
+  },
+  "nav": {
+    "issues": "Issues",
+    "fueling": "Fueling",
+    "users": "Users"
+  },
+  "issues": {
+    "title": "Maintenance Issues",
+    "newIssue": "New Issue",
+    "editIssue": "Edit Issue",
+    "description": "Issue Description",
+    "status": "Status",
+    "severity": "Severity",
+    "handleBy": "Handle By",
+    "dateOpened": "Date Opened",
+    "lastModified": "Last Modified",
+    "all": "All",
+    "noIssues": "No issues found",
+    "statuses": {
+      "OPEN": "Open",
+      "IN_PROCESS": "In Process",
+      "CLOSED": "Closed",
+      "NON_ISSUE": "Non-Issue",
+      "RE_OPENED": "Re-Opened"
+    },
+    "severities": {
+      "CRITICAL": "Critical",
+      "WARNING": "Warning",
+      "INFO": "Info"
+    },
+    "handleByOptions": {
+      "INTERNAL": "Internal",
+      "SERVICE_PROVIDER": "Service Provider"
+    }
+  },
+  "fueling": {
+    "title": "Fueling Records",
+    "amount": "Amount",
+    "engineHours": "Engine Hours",
+    "hours": "hrs",
+    "date": "Date",
+    "liters": "L",
+    "noRecords": "No fueling records yet"
+  },
+  "users": {
+    "title": "User Management",
+    "addUser": "Add User",
+    "editUser": "Edit User",
+    "name": "Name",
+    "phone": "Phone",
+    "password": "Password",
+    "newPassword": "New Password",
+    "passwordMin": "Minimum 4 characters",
+    "passwordLeaveEmpty": "Leave empty to keep current",
+    "noUsers": "No users yet",
+    "active": "Active",
+    "inactive": "Inactive"
+  }
+}

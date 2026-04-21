@@ -1,0 +1,49 @@
+{
+  "name": "boat-maintenance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@hookform/resolvers": "^3.9.0",
+    "@mui/icons-material": "^5.16.0",
+    "@mui/material": "^5.16.0",
+    "@mui/x-date-pickers": "^7.0.0",
+    "@prisma/client": "^5.20.0",
+    "@tanstack/react-query": "^5.60.0",
+    "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.0",
+    "next": "^14.2.0",
+    "next-auth": "5.0.0-beta.25",
+    "next-intl": "^3.22.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-hook-form": "^7.53.0",
+    "stylis": "^4.3.0",
+    "stylis-plugin-rtl": "^2.1.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/stylis": "^4.2.7",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "prisma": "^5.20.0",
+    "typescript": "^5.6.0"
+  }
+}
